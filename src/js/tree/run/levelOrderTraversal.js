@@ -10,4 +10,4 @@ tree.root.left.right= new Node(5);
 
 console.log('level order traversal ');
 const path = tree.levelOrderTraversal(tree.root);
-console.log(path.join(''));
+console.log(path.join(' '));
