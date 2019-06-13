@@ -1,7 +1,7 @@
-const BinaryTree  = require('../BinaryTree');
-const Node = require('../Node');
+const BinaryTree = require('../js/tree/BinaryTree');
+const Node = require('../js/tree/Node');
 
-let tree = new BinaryTree();
+const tree = new BinaryTree();
 tree.levelOrderInsertion(new Node(1));
 tree.levelOrderInsertion(new Node(2));
 tree.levelOrderInsertion(new Node(3));

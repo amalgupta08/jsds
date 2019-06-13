@@ -7,7 +7,7 @@ module.exports = (tree) => {
             }
             const queue = [];
             queue.push(tree.root);
-            while(queue.length) {
+            while (queue.length) {
                 const temp = queue.shift();
                 if (temp.left == null) {
                     temp.left = node;
@@ -22,6 +22,6 @@ module.exports = (tree) => {
                     queue.push(temp.right);
                 }
             }
-        }
-    }
-}
+        },
+    };
+};

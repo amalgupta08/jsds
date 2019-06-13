@@ -12,4 +12,4 @@ module.exports = class BinaryTree {
             levelOrderInsertion(this),
             levelOrderDeletion(this));
     }
-}
+};

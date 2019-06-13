@@ -5,7 +5,7 @@ module.exports = (tree) => {
             queue.push(tree.root);
             let temp;
             let nodeToDelete;
-            while(queue.length) {
+            while (queue.length) {
                 temp = queue.shift();
                 if (temp.data === data) {
                     nodeToDelete = temp;
@@ -15,25 +15,25 @@ module.exports = (tree) => {
                 }
                 if (temp.right != null) {
                     queue.push(temp.right);
-                } 
+                }
             }
             const val = temp.data;
             deleteNode(tree.root, temp);
             nodeToDelete.data = val;
-        }
-    }
-}
-function deleteNode (root, nodeToDelete) {
+        },
+    };
+};
+function deleteNode(root, nodeToDelete) {
     const queue = [];
     queue.push(root);
-    while(queue.length) {
+    while (queue.length) {
         const temp = queue.shift();
         if (temp.data === nodeToDelete.data) {
             temp = null;
             break;
         }
         if (temp.right != null ) {
-            if(temp.right.data == nodeToDelete.data) {
+            if (temp.right.data == nodeToDelete.data) {
                 temp.right = null;
                 break;
             } else {
@@ -41,7 +41,7 @@ function deleteNode (root, nodeToDelete) {
             }
         }
         if (temp.left !=null ) {
-            if(temp.left.data == nodeToDelete.data) {
+            if (temp.left.data == nodeToDelete.data) {
                 temp.left = null;
                 break;
             } else {
